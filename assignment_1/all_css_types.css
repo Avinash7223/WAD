@@ -1,0 +1,24 @@
+h1 
+{
+font-style:italic;
+} 
+P {
+color:rgb(34, 34, 68); 
+}
+#science {
+     color:black;
+     background-color: rgb(213, 154, 94);
+     text-align:center;
+     border:1px solid red;
+}
+.paragraph{
+    color:rgb(77, 23, 77);
+    font-size: 20px;
+}
+.headline{
+    color:rgb(64, 23, 23);
+    font-size:27px;
+    font-family: Arial;
+    font-style: normal;
+
+}
