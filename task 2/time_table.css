@@ -1,0 +1,17 @@
+
+ .background-image{
+  background-image: url("https://images.shiksha.com/mediadata/images/articles/1699948480php1RD9wy.jpeg");
+  background-size: 100% 100%;	
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+    background-attachment: fixed;							
+ }
+
+ th{
+    font-size: x-large;
+    color:rgb(10, 10, 18);
+ }
+ td{
+    font-size: x-large;
+    color:rgb(67, 7, 38);
+ }

@@ -1,0 +1,16 @@
+.background-image{
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5iiS907Fo_lhHkpvVZcuNpsAEzpBszYvHFg&usqp=CAU");
+ background-size: 100% 100%;	
+ background-repeat: no-repeat;
+   background-attachment: fixed;											
+}
+span{
+ color:black;
+ font-size: 20px;
+ background-color: rgb(172, 187, 60);
+}
+
+img{
+  height: 150px;
+  width:auto;
+}
