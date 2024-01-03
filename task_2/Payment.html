@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+</head>
+<body>
+	<form>
+    <table border="0" width="600px" align="center" >
+        <tr>
+            <td> Registration ID :</td>
+			<td>
+				<input type="text" name="rid" maxlength="20" size="15" />
+			</td>
+        </tr>
+        <tr >
+            <td> Parent number :</td>
+			<td>
+				<input type="number" name="pno" maxlength="20" size="15" />
+			</td>
+        </tr>
+        <tr >
+            <td>Email :</td>
+			<td>
+				<input type="email" name="email" maxlength="20" size="15" />
+			</td>
+        </tr>
+		<tr >
+            <td> Mode of Payment</td>
+			<td>
+				<input type="radio" name="upi" maxlength="6" size="15" />UPI/BHIM <br>
+                <input type="radio" name="cc/dc" maxlength="6" size="15" />credit/Debit card <br>
+                <input type="radio" name="IB" maxlength="6" size="15" />Internet Banking <br>
+			</td>
+        </tr>
+		<tr align="center" >
+            <td> 
+				<input type="submit" name="s" value="submit" />
+			</td>
+			<td>
+				<input type="reset" name="c" value="clear" />
+			</td>
+	        </tr>
+        
+    </table>
+	</form>
+</body>
+</html>
