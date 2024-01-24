@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="vald_form.css">
+</head>
+<body>
+<form id="registrationForm">
+    <table border="0" width = "400px">
+        <tr>
+            <td for="name">Name:</td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+
+        <tr>
+            <td for="email">Email:</td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+
+        <tr>
+            <td for="password">Password:</td>
+            <td><input type="password" id="password" name="password" required></td>
+        </tr>
+
+        <tr>
+            <td for="phone">Phone Number:</td>
+            <td><input type="text" id="phone" name="phone" required></td>
+        </tr>
+
+        <tr>
+            <td for="dob">Date of Birth:</td>
+            <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+    </table>
+    <button type="button" onclick="validateForm()">Submit</button>
+    
+</form>
+
+<script src="vald_form.js"></script>
+</body>
+</html>

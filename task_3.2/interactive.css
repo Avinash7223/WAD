@@ -1,0 +1,13 @@
+
+#quiz-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+}
