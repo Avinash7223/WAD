@@ -1,0 +1,81 @@
+<?xml version="1.0"?>  
+<langtypes>     
+    <lang>   
+        <language>C</language>   
+        <inventor>Dennis Ritchie</inventor>   
+        <year>1972</year>                 
+        <place>Bell Labs</place>                  
+    </lang>  
+    <lang>   
+        <language>C++</language>   
+        <inventor>Bjarne Stroustrup</inventor>   
+        <year>1979</year>                 
+        <place>Bell Labs</place>                   
+    </lang>
+    <lang>   
+        <language>Java</language>   
+        <inventor> James Gosling</inventor>   
+        <year>1995</year>                 
+        <place>Sun Microsystems</place>                   
+    </lang> 
+    <lang>   
+        <language>Python</language>   
+        <inventor> Guido van Rossum</inventor>   
+        <year>1989</year>                 
+        <place>Netherlands(CWI)</place>                   
+    </lang> 
+    <lang>   
+        <language>HTML</language>   
+        <inventor>Tim Berners-Lee</inventor>   
+        <year>1991</year>                 
+        <place>CERN</place>                   
+    </lang>
+    <lang>   
+        <language>CSS</language>   
+        <inventor> Håkon Wium Lie,Bert Bos</inventor>   
+        <year>19996</year>                 
+        <place>W3C</place>                   
+    </lang>
+    <lang>   
+        <language>JavaScript</language>   
+        <inventor> Brendad Eich</inventor>   
+        <year>1995</year>                 
+        <place>Netscape</place>                   
+    </lang>  
+    <lang>   
+        <language>Ruby</language>   
+        <inventor> Yukihiro Matsumoto</inventor>   
+        <year>1995</year>                 
+        <place>Japan</place>                   
+    </lang>
+    <lang>   
+        <language>PHP</language>   
+        <inventor>Ramus Lerdorf</inventor>   
+        <year>1994</year>                 
+        <place>Canada</place>                   
+    </lang>
+    <lang>   
+        <language>Rust</language>   
+        <inventor>Graydon Hoare</inventor>   
+        <year>2010</year>                 
+        <place>Mozilla Research</place>                   
+    </lang>
+    <lang>   
+        <language>Perl</language>   
+        <inventor> Larry Wall</inventor>   
+        <year>1987</year>                 
+        <place>NASA </place>                   
+    </lang>
+    <lang>   
+        <language>Objective-C</language>   
+        <inventor> Brad Cox</inventor>   
+        <year>1984</year>                 
+        <place>Stepstone Corporation</place>                   
+    </lang>
+    <lang>   
+        <language>Shell Scripting (Bash)</language>   
+        <inventor>Brian Fox</inventor>   
+        <year>1989</year>                 
+        <place>Free Software Foundation</place>                   
+    </lang>
+</langtypes> 
