@@ -1,19 +1,19 @@
 const quizData = [
   {
-      question: "What is the short form of 'Web Application Development'?",
-      answer: "WAD"
+    question: "What is the short form of 'Web Application Development'?",
+    answer: "WAD"
   },
   {
-      question: "How many types of CSS exist?",
-      answer: "3"
+    question: "How many types of CSS exist?",
+    answer: "3"
   },
   {
-      question: "What is the tag used to connect HTML and CSS?",
-      answer: "<link>"
+    question: "What is the tag used to connect HTML and CSS?",
+    answer: "<link>"
   },
   {
-      question: "Who is the father of the computer?",
-      answer: "Charles Babbage"
+    question: "Who is the father of the computer?",
+    answer: "Charles Babbage"
   }
 ];
 
