@@ -1,4 +1,5 @@
 <?xml version="1.0"?>  
+<?xml-stylesheet type="text/xsl" href="langtypes.xsl"?>
 <langtypes>     
     <lang>   
         <language>C</language>   
@@ -33,7 +34,7 @@
     <lang>   
         <language>CSS</language>   
         <inventor> Håkon Wium Lie,Bert Bos</inventor>   
-        <year>19996</year>                 
+        <year>1996</year>                 
         <place>W3C</place>                   
     </lang>
     <lang>   
