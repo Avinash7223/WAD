@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+</head>
+<body ng-app="productApp">
+  <div ng-controller="ProductCont as prodCtrl">
+    <h1>Product List</h1>
+    <input type="text" ng-model="prodCtrl.searchText" placeholder="Search by name">
+    <p><b> &emsp;&emsp;&emsp;&emsp;&emsp; Name &emsp;&emsp; Price</b></p>
+    <ul type="none">
+      <li ng-repeat="product in prodCtrl.products | filter:prodCtrl.searchText">
+        <p>{{ product.name }} &nbsp; -- ₹ {{ product.price }}</p>
+      </li>
+    </ul>
+  </div>
+  
+  <script>
+    angular.module('productApp', [])
+      .controller('ProductCont', function() {
+        var vm = this;
+
+        vm.products = [
+          { name: 'Bajaj Platina 100', price: 60000 },
+          { name: 'Hero Splendor Plus', price: 70000 },
+          { name: 'Honda Shine', price: 80000 },
+          { name: 'TVS Apache RTR 160 4V', price: 120000 },
+          { name: 'Yamaha FZS-FI', price: 130000 },
+          { name: 'Suzuki Gixxer SF', price: 140000 },
+          { name: 'Royal Enfield Classic 350', price: 200000 },
+          { name: 'Bajaj Avenger Cruise 220', price: 140000 },
+          { name: 'Jawa Perak', price: 210000 },
+          { name: 'Hero XPulse 200', price: 140000 },
+          { name: 'Royal Enfield Himalayan', price: 240000 },
+          { name: 'KTM 390 Adventure', price: 360000 },
+          { name: 'KTM Duke 200', price: 200000 },
+          { name: 'Yamaha MT-15', price: 170000 },
+          { name: 'Bajaj Pulsar NS200', price: 150000 },
+          { name: 'Hero Electric Optima', price: 60000 },
+          { name: 'Revolt RV400', price: 130000 },
+          { name: 'Ather 450X', price: 180000 }
+        ];
+      });
+  </script>
+</body>
+</html>

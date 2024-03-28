@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    <body ng-app="calApp">
+    <h1>Calculator</h1>
+    <div ng-controller="CalCont as myCtrl">
+        <input type="number"  placeholder="Enter number"  ng-model="myCtrl.num1">
+        <select ng-model="myCtrl.oper">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">&times;</option>
+            <option value="/">&divide;</option>
+        </select>
+        <input type="number" placeholder="Enter number" ng-model="myCtrl.num2">
+        <button ng-click="myCtrl.cal()">Calculate</button>
+        <p >Result:
+            {{ myCtrl.result }}
+        </p>
+    </div>
+    <script>
+        angular.module('calApp', [])
+    .controller('CalCont', function() {
+      var vm = this;     
+      vm.result = null;
+      
+      vm.cal = function() {
+        switch (vm.oper) {
+          case '+':
+            vm.result = vm.num1 + vm.num2;
+            break;
+          case '-':
+            vm.result = vm.num1 - vm.num2;
+            break;
+          case '*':
+            vm.result = vm.num1 * vm.num2;
+            break;
+          case '/':
+            if (vm.num2 !== 0) {
+              vm.result = vm.num1 / vm.num2;
+            } else {
+              vm.result = 'Undefined (Division by zero)';
+            }
+            break;
+          default:
+            vm.result = 'Invalid Operation';
+        }
+      };
+    });
+  
+    </script>
+</body>
+</html>

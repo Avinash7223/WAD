@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="taskApp">
+  <div ng-controller="To_do_List as taskCtrl">
+    <h1>To-Do List</h1>
+
+    <form ng-submit="taskCtrl.addTask()">
+      <input type="text" ng-model="taskCtrl.newTask" placeholder="Add new task" required>
+      <button type="submit">Add</button>
+    </form>
+    
+    <ul>
+      <li ng-repeat="task in taskCtrl.tasks">
+        <input type="checkbox" ng-model="task.completed" ng-change="taskCtrl.updateTask(task)">
+        <span ng-class="{'completed': task.completed}">{{ task.name }}</span>   
+        <button ng-click="taskCtrl.deleteTask(task)">Delete</button>   
+      </li>
+    </ul>
+    
+  </div>
+
+  <script>
+    angular.module('taskApp', [])
+      .controller('To_do_List', function() {
+        var vm = this;
+        vm.tasks = [
+          { name: 'mid 1', completed: true },
+          { name: 'mid 2', completed: false }
+        ];
+        
+        vm.addTask = function() {
+          if (vm.newTask.trim() !== '') {
+            vm.tasks.push({
+              name: vm.newTask,
+              completed: false
+            });
+            vm.newTask = ''; 
+          }
+        };
+        
+        vm.updateTask = function(task) {
+          console.log(task.name + ' completed: ' + task.completed);
+        };
+        vm.deleteTask = function(task) {
+          var index = vm.tasks.indexOf(task);
+          if (index !== -1) {
+            vm.tasks.splice(index, 1);
+          }
+        };
+      });
+  </script>
+</body>
+</html>

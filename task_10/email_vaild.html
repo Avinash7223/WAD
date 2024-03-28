@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    <body ng-app = "">
+        <p>Hello this is email validate </p>
+        <form name="myForm" >
+            Enter your Email:<input type="email" name="emi" ng-model="myInput" required><br>            
+        </form>
+        <p>The eamil validatation check</p>
+        <p>{{myForm.emi.$valid}}</p>
+    </body>
+
+</html>
